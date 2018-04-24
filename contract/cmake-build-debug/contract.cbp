@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="bar">
-				<Option output="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/libbar.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="contract">
+				<Option output="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/libcontract.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -54,14 +54,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 bar"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 contract"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="bar/fast">
-				<Option output="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/libbar.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="contract/fast">
+				<Option output="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/libcontract.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -77,7 +77,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 bar/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 contract/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -85,13 +85,13 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/rx.pb.cc">
-			<Option target="bar"/>
+			<Option target="contract"/>
 		</Unit>
 		<Unit filename="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/rx.pb.cc.rule">
-			<Option target="bar"/>
+			<Option target="contract"/>
 		</Unit>
 		<Unit filename="/Users/karl/Documents/code/git/RxBC/contract/cmake-build-debug/rx.pb.h">
-			<Option target="bar"/>
+			<Option target="contract"/>
 		</Unit>
 		<Unit filename="/Users/karl/Documents/code/git/RxBC/contract/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

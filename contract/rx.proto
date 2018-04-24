@@ -1,0 +1,66 @@
+syntax="proto3";
+
+package RxBC.contract;
+
+message RxTransactionBlock{
+    bytes id = 1;
+    bytes prev=2;
+    int64 nounce=3;
+    uint64 timestamp=4;
+    repeated RxTransaction transactions=5;
+}
+
+message RxParticipant{
+    bytes id=1;
+    string licenseNo=2;
+    string orgName=3;
+}
+
+message RxTransaction{
+    bytes id=1;
+    bytes signature=2;
+    uint64 timestamp=3;
+    RxParticipant participant=4;
+    string patientIdentifier=5;
+    enum TransactionType{
+        ORDER=0;
+        FILL=1;
+        NOTIFY=2;
+    }
+    TransactionType type=6;
+    message RxOrder{
+         string patientIdentifier=1;
+         string drugIdentifier=2;
+         string genericIdentifier=3;
+         string dosageInformation=4;
+         string frequencyInformation=5;
+         bool allowGenerics=7;
+        string rxSig=6;
+    }
+    RxOrder order=7;
+
+    message RxFulfillment{
+        string drugIdentifier=1;
+        enum DrugType{
+            NAMEBRAND=0;
+            GENERIC=1;
+        }
+        enum DrugFormat{
+            TABLET=0;
+            LIQUID=1;
+            INJECTABLE=2;
+            INHALED=3;
+        }
+        DrugType type=2;
+        DrugFormat format=3;
+        uint32 dispensedCount=4;
+        uint32 refillRemainingCount=5;
+        string dispensedScale=6;
+    }
+    RxFulfillment fill=8;
+}
+
+
+
+
+
